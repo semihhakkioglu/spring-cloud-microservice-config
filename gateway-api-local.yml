@@ -27,5 +27,5 @@ zuul:
     invoice-service:
         path: /invoices/**
         serviceId: invoice-service
-        stripPrefix: false
+        stripPrefix: true
         sensitiveHeaders:
