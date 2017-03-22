@@ -6,8 +6,6 @@ eureka:
     leaseExpirationDurationInSeconds: 2
     hostname: gateway-api
   client:
-    registerWithEureka: true
-    fetchRegistry: true
     serviceUrl:
       defaultZone: http://service-discovery:8761/eureka/
 ribbon:

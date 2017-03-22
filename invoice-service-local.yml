@@ -4,7 +4,5 @@ eureka:
     leaseExpirationDurationInSeconds: 2
     hostname: invoice-service
   client:
-    registerWithEureka: true
-    fetchRegistry: true
     serviceUrl:
       defaultZone: http://service-discovery:8761/eureka/

@@ -5,7 +5,5 @@ eureka:
     leaseExpirationDurationInSeconds: 2
     hostname: merchant-service
   client:
-    registerWithEureka: true
-    fetchRegistry: true
     serviceUrl:
       defaultZone: http://service-discovery:8761/eureka/
