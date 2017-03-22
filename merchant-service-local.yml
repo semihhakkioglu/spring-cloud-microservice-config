@@ -1,3 +1,4 @@
+message: Merhaba
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
