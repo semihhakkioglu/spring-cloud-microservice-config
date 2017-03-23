@@ -6,12 +6,16 @@ zuul:
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
+
   routes:
-    merchant:
+    merchant-service:
         path: /merchants/**
         serviceId: merchant-service
-        stripPrefix: true
-    invoice:
+        stripPrefix: false
+        sensitiveHeaders:
+
+    invoice-service:
         path: /invoices/**
         serviceId: invoice-service
         stripPrefix: true
+        sensitiveHeaders:
