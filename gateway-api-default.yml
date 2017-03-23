@@ -7,11 +7,11 @@ zuul:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
-    merchant-service:
+    merchant:
         path: /merchants/**
         serviceId: merchant-service
         stripPrefix: true
-    invoice-service:
+    invoice:
         path: /invoices/**
         serviceId: invoice-service
         stripPrefix: true
