@@ -1,9 +1,1 @@
 message: Hi
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-    hostname: merchant-service
-  client:
-    serviceUrl:
-      defaultZone: http://service-discovery:8761/eureka/

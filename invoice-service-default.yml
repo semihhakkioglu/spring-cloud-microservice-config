@@ -1,8 +1,1 @@
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-    hostname: invoice-service
-  client:
-    serviceUrl:
-      defaultZone: http://service-discovery:8761/eureka/
+currency: TRY

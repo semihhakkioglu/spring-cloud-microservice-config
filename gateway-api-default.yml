@@ -1,13 +1,3 @@
-server:
-  port: 8080
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-    hostname: gateway-api
-  client:
-    serviceUrl:
-      defaultZone: http://service-discovery:8761/eureka/
 ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
