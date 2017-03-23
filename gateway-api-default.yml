@@ -11,7 +11,7 @@ zuul:
     merchant-service:
         path: /merchants/**
         serviceId: merchant-service
-        stripPrefix: false
+        stripPrefix: true
         sensitiveHeaders:
 
     invoice-service:
