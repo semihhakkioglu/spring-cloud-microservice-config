@@ -1,0 +1,14 @@
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+zuul:
+  routes:
+    ignoredService: '*'
+    invoice-service:
+      path: /invoices/**
+      serviceId: invoice-service
+      stripPrefix: false
+    merchant-service:
+      path: /merchants/**
+      serviceId: merchant-service
+      stripPrefix: true
