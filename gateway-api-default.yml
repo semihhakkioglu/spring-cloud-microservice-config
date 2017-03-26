@@ -2,16 +2,10 @@ ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
 zuul:
-  host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
   routes:
+    ignoredService: '*'
     merchant-service:
-        path: /merchants/**
         serviceId: merchant-service
-        stripPrefix: false
-        sensitiveHeaders:
-
     invoice-service:
         path: /invoices/**
         serviceId: invoice-service
