@@ -5,11 +5,10 @@ zuul:
   routes:
     ignoredService: '*'
     merchant-service:
-        path: /merchants/**
-        serviceId: merchant-service
-        stripPrefix: false
+      path: /merchants/**
+      serviceId: merchant-service
+      stripPrefix: false
     invoice-service:
-        path: /invoices/**
-        serviceId: invoice-service
-        stripPrefix: false
-        sensitiveHeaders:
+      path: /invoices/**
+      serviceId: invoice-service
+      stripPrefix: false
