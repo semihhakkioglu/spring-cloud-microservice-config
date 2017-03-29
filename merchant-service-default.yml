@@ -1,1 +1,4 @@
-merchants: gittigidiyor, sahibinden, n11
+merchants:
+  - gittigidiyor
+  - sahibinden
+  - n11
